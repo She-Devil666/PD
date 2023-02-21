@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:PD.Views"
+            x:Class="PD.Views.Home"
+            BarBackgroundColor="#fff"
+            BackgroundColor="#f8f8f8"
+            NavigationPage.HasNavigationBar="True">
+    <TabbedPage.Children>
+        <local:AnotherAccounts IconImageSource="Resources/drawable/another_accounts.png" BackgroundColor="#fff"/>
+        <local:Messages IconImageSource="Resources/drawable/messages.png" BackgroundColor="#fff"/>
+        <local:AccountPage IconImageSource="Resources/drawable/account.png" BackgroundColor="#fff"/>
+    </TabbedPage.Children>
+</TabbedPage>

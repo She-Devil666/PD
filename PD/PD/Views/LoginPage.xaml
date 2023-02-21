@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PD.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="WidthRequest" Value="50"/>
+            <Setter Property="PlaceholderColor" Value="#707070"/>
+            <Setter Property="MaxLength" Value="20"/>
+            <Setter Property="ClearButtonVisibility" Value="WhileEditing"/>
+            <Setter Property="IsSpellCheckEnabled" Value="False"/>
+            <Setter Property="IsTextPredictionEnabled" Value="False"/>
+            <Setter Property="TextColor" Value="#090909"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#7c64c4"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentView>
+        <StackLayout BackgroundColor="#F8F8F8">
+            <StackLayout x:Name="LoginPanel" Margin="30, 60">
+                <Image Source="Resources/drawable/icon.png"/>
+                <Entry x:Name="login" Placeholder="Логин"/>
+                <Entry x:Name="pass" IsPassword="True" Placeholder="Пароль"/>
+                <Button x:Name="Login" Clicked="Login_Clicked" Text="Войти"></Button>
+                <Button x:Name="reg" Clicked="reg_Clicked" Text="Еще нет аккаунта?"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentView>
+</ContentPage>
